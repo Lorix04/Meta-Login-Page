@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+img {
+    width: 60px;
+    height: 12px;
+    margin-top: 6px;
+}
+
+.login-form h1 {
+    margin-top: 9px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 570;
+    color: rgb(10, 19, 23);
+}
+
+.login-form input {
+    width: 560px;
+    height: 60px;
+    padding: 10px 20px;
+    border: 1px solid rgb(204, 211, 219);
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 550;
+    outline: none;
+}
+
+.login-form input:hover {
+    border: 1px solid rgb(93, 108, 123);
+}
+
+.login-form input:active {
+    border: 1px solid rgb(93, 108, 123);
+}
+
+.login-form button {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    background-color: rgb(0, 100, 224);
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.login-form button:hover {
+    background-color: rgb(0, 95, 213);
+}
+
+.login-form a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(204, 211, 219);
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(28, 30, 33);
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 60px;
+    padding: 20px 20px 10px 20px;
+    border: 1px solid rgb(204, 211, 219);
+    border-radius: 16px;
+    font-size: 15px;
+    font-weight: 550;
+    outline: none;
+    background-color: #fff;
+}
+
+.label-name {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    pointer-events: none;
+    font-size: 15px;
+    font-weight: 550;
+    font-stretch: 100%;
+    padding-left: 20px;
+    outline-width: 0px;
+    outline-color: rgba(93, 108, 123, 255);
+}
+
+.label-name .content-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: all 0.2s ease;
+    color: rgb(93, 108, 123);
+    white-space: nowrap;
+}
+
+.label-name .content-name {
+    transition: all 0.2s ease;
+    color: rgb(93, 108, 123);
+}
+
+.input-group input:focus+.label-name .content-name,
+.input-group input:valid+.label-name .content-name {
+    transform: translateY(-18px);
+    font-weight: 450;
+    font-size: 13px;
+}
